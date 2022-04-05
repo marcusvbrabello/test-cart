@@ -23,10 +23,6 @@ function maskPrice(priceInitial){
   }
 }
 
-function openInfoModal(item){
-  return false;
-}
-
 function List(props) {
   maskPrice();
   return (
@@ -42,7 +38,7 @@ function List(props) {
         };
 
         return (
-          <div class="wrapItem" onClick={() => openInfoModal(val)} key={val.uniqueId}>
+          <div class="wrapItem" key={val.uniqueId}>
               <div id="wrapImg" style={imgStyle}></div>
               <div id="wrapInfo">
                 <h3 id="name-item">{val.name}</h3>
