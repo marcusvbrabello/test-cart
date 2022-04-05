@@ -24,7 +24,6 @@ function maskPrice(priceInitial){
 }
 
 function List(props) {
-  maskPrice();
   return (
     <div id="list">
       {props.items.map((val) => {
