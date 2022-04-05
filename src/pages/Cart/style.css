@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url(../../fonts/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    font-weight: 900;
+    src: local('Poppins'), url(../../fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+h3, h5 {
+    color: '#000'
+}
+
+body {
+    max-width: 100%;
+    font-family: Poppins;
+    
+}
+
+#divTitle {
+    border: solid #ddd;
+    border-width: 0 0 2px 0;
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+#title {
+    font-family: PoppinsBold;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*                 END HEADER                  */
+
+#list {
+    border: solid #ddd;
+    border-width: 0 0 2px 0;
+}
+
+.wrapItem {
+    display: flex;
+    height: 20vh;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+#wrapImg {
+    flex-grow: 1;
+    min-width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+}
+
+#wrapInfo {
+    flex-grow: 6;
+    margin-left: 2%
+}
+
+#name-item {
+    font-size: 12px;
+}
+
+#price {
+    color: #C4C4C4
+}
+
+#selling-price {
+    font-family: PoppinsBold;
+}
+
+/*                 END LIST                  */
+
+#totalPrice {
+    font-family: PoppinsBold;
+    display: flex;
+    justify-content: space-between;
+}
+
+#wrapTotalPrice {
+    border: solid #ddd;
+    border-width: 0 0 2px 0;
+}
+
+/*                 END TOTAL PRICE                  */
+
+#freeShip{
+    background-color: #abe78a;
+    border-radius: 15px;
+}
+
+#txtFree {
+    font-family: PoppinsBold;
+    font-size: 12px;
+    text-align: center;
+    color: #45951a;
+}
+
+/*                 END SHIP                  */
+
+#btnDone {
+    font-family: PoppinsBold;
+    width: 100%;
+    background-color: #3b74f2;
+    color: #FFF;
+    border: 0px;
+    font-size: 16px;
+    padding: 2.5%;
+    border-radius: 5px;
+}
+
+#btn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*                 END BUTTON                  */
+
+@media only screen{
+    .wrapItem{
+        min-height: 46vh;
+    }
+    #btnDone {
+        padding: 1%;
+        font-size: 22px;
+    }
+    #divTitle {
+        margin-bottom: 3%;
+    } 
+    #name-item{
+        font-size: 30px;
+    }
+    #price {
+        font-size: 14px;
+    }
+    #selling-price {
+        font-size: 20px;
+    }
+    #totalPrice {
+        font-size: 22px;
+    }
+    #txtFree {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .wrapItem{
+        min-height: 21vh;
+    }
+    #wrapImg{
+        min-width:  120px;
+        height: 120px;
+    }
+    #name-item {
+        font-size: 13px !important;
+    }
+    #price {
+        font-size: 8px !important;
+    }
+    #selling-price {
+        font-size: 10px !important;
+    }
+    #txtFree {
+        font-size: 13px;
+    }
+    #btnDone {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .wrapItem {
+        min-height: 22vh;
+    }
+    #name-item {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1024px){
+    #name-item {
+        font-size: 20px;
+    }
+    #price {
+        font-size: 10px;
+    }
+    #selling-price {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    #wrapImg{
+        min-width:  200px;
+        height: 180px;
+    }
+    .wrapItem {
+        min-height: 30vh;
+    }
+    #name-item {
+        font-size: 26px;
+    }
+    #price {
+        font-size: 12px;
+    }
+    #selling-price {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1441px){
+    #wrapImg{
+        min-width: 360px;
+        height: 340px;
+    }
+    #name-item {
+        font-size: 36px;
+    }
+    #price {
+        font-size: 20px;
+    }
+    #selling-price {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 1439px){
+    .wrapItem {
+        min-height: 25vh;
+    }
+}
